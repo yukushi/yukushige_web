@@ -1,0 +1,430 @@
+html{
+    height: 100%;
+  }
+  
+  body{
+    background-color: rgb(49, 49, 49);
+    margin:0;
+    height: 100%;
+    font-family: 'Righteous', cursive;
+  }
+  
+  footer{
+    font-size: 12px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    user-select: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color:rgb(221, 208, 255);
+  }
+  
+  img{
+    width:50px;
+  }
+  
+  .key{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+  }
+  
+  .ie{
+    color:#ffffff;
+    background-color: #ff4040;
+  }
+  
+  /* Yukushige.com */
+  .mainTitle{
+    color:white;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    margin: 0px auto;
+    padding:10px 100px;
+    text-align: center;
+    user-select: none;
+    z-index:4;
+  }
+
+  .admin{
+    background-color: rgb(255, 72, 0);
+    color:white;
+    font-weight: bold;
+}
+  
+  .t1, .t2{
+    display: inline-block;
+  }
+  
+  .t1{
+    animation: fadeIn 4s ease 0s 1 normal;
+  }
+  
+  .t2{
+    animation: fadeIn2 4s ease 0s 1 normal;
+  }
+  
+  #dot{
+    animation: fadeIn3 3s ease 0s 1 normal;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+      color: #0e0e83;
+      transform: translateY(10px);
+    }
+    50%{
+      color: #ffc98c;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn2 {
+    0% {
+      opacity: 0.5;
+      color: rgb(40, 95, 35);
+      transform: translateY(-10px);
+    }
+    50%{
+      color: #ffc98c;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn3 {
+    0% {
+      opacity: 0.0;
+      color: rgb(40, 95, 35);
+    }
+    80%{
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rot {
+      0% {
+      transform: rotate(0deg);
+      opacity: 0.0;
+    }
+      100% {transform: rotate(360deg);}
+  }
+  
+  section{
+    animation: fadeIn4 4s ease 0s 1 normal;
+  }
+  
+  @keyframes fadeIn4 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .test1, .test2, .test3, .test4, .test5{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 65%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    margin: 0px auto;
+    padding:10px 10px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .test1, .test5{
+    top: 60%;
+  }
+  
+  .test3{
+    top:70%;
+  }
+  
+  .test1{
+    left: 30%;
+  }
+  
+  .test2{
+    left: 40%;
+  }
+  
+  .test3{
+    left: 50%;
+  }
+  
+  .test4{
+    left: 60%;
+  }
+  
+  .test5{
+    left: 70%;
+  }
+  
+  .fukidashi {
+    display: none;
+    width: 100px;
+    position: absolute;
+    bottom:-70px;
+    padding: 16px;
+    border-radius: 5px;
+    background: #5e5e5e;
+    color: #fff;
+    border: 1px solid;
+    z-index:10;
+  }
+  .fukidashi:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 58px;
+    margin-left: 10px;
+  
+    border-right: 50px solid transparent;
+    border-bottom: 86.6025px solid #fff;
+    border-left: 50px solid transparent; 
+    
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+    z-index:10;
+  }
+  .text:hover + .fukidashi {
+    display: block;
+  }
+  
+  .text{
+    transition: all 1s ease;
+  }
+  
+  .text:hover{
+    transform:rotateY(360deg) rotateX(40deg) rotateZ(20deg) scale(1.7);
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  .modal {
+    font-size: 20px;
+    display: none;
+    width: 500px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.548);
+    position: fixed;
+    top: -300%;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px 15px;
+    z-index: 5;
+  }
+  
+  #modal-check {
+    display: none;
+  }
+  #modal-check:checked + .modal {
+    display: block;
+  }
+  
+  .cl{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size:40px;
+    background-color: tomato;
+    width: 20px;
+    height: 20px;
+    padding: 15px 15px;
+    border-radius: 20px;
+  }
+  
+  .mail{
+    /* border: solid 2px; */
+    font-size: 20px;
+    position: absolute;
+    top:0;
+  }
+  
+  .maction{
+    animation: fadeIn 4s ease 0s 1 normal,
+               ma 5s ease-out 4s infinite;
+  }
+  
+  .me{
+    font-size: 20px;
+  }
+  
+  .fukidashi2 {
+    display: none;
+    width: 200px;
+    position: absolute;
+    bottom:90%;
+    right: 0;
+    border-radius: 5px;
+    background: #5e5e5e;
+    color: #fff;
+    border: 1px solid;
+    z-index:10;
+  }
+  
+  .text2:hover + .fukidashi2 {
+    display: block;
+  }
+  
+  .text2{
+    transition: all 1s ease;
+  }
+  
+  @keyframes ma {
+    0% {
+      transform: rotate(0deg);
+      
+    }
+    25%{
+      transform: rotate(10deg);
+    }
+    50%{
+      color:rgb(255, 157, 140);
+    }
+    75%{
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* for mobile */
+  @media screen and (max-width:1024px){
+    .mainTitle{
+      font-size: 35px;
+      padding:0;
+      width: 100%;
+    }
+  
+    img,svg{
+      width:40px;
+    }
+  
+    section{
+      animation: none;
+    }
+  
+    .test1, .test2, .test3, .test4, .test5{
+      padding: 0;
+    }
+  
+    .test1, .test2, .test3{
+      top:65%;
+    }
+    .test4, .test5{
+      top:80%;
+    }
+  
+    .test1{
+      left: 30%;
+    }
+    
+    .test2{
+      left: 50%;
+    }
+    
+    .test3{
+      left: 70%;
+    }
+    
+    .test4{
+      left: 40%;
+    }
+    
+    .test5{
+      left: 60%;
+    }
+  
+    
+  .fukidashi {
+    font-size: 15px;
+    width: auto;
+    position: absolute;
+    bottom:-50px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #5e5e5e;
+    color: #fff;
+    border: 2px solid;
+  }
+  .fukidashi:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 29px;
+    margin-left: 10px;
+  
+    border-right: 50px solid transparent;
+    border-bottom: 86.6025px solid #fff;
+    border-left: 50px solid transparent; 
+    
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+  }
+  
+  .modal {
+    width: 300px;
+    height: 10px;
+  }
+  
+  .cl{
+    width: 10px;
+    height: 10px;
+  }
+  
+  .mail{
+    font-size: 12px;
+  }
+  
+  .text2:hover + .fukidashi2 {
+    display: none;
+  }
+  
+  footer{
+    font-size: 8px;
+    width:100%;
+    text-align: center;
+    user-select: none;
+  }
+  }
